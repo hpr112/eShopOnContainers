@@ -21,6 +21,6 @@ jobs:
     helmto: $(Build.ArtifactStagingDirectory)/deploy/k8s/helm
 - template: ../multiarch.yaml
   parameters:
-    image: ordering.api
+    image: ordering.backgroundtasks
     branch: $(Build.SourceBranchName)
     registryEndpoint: $(registryEndpoint)
