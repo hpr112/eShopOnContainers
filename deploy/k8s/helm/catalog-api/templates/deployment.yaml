@@ -1,4 +1,3 @@
-//testendring
 {{- $name := include "catalog-api.fullname" . -}}
 {{- $cfgname := printf "%s-%s" "cfg" $name -}}
 apiVersion: apps/v1beta2
