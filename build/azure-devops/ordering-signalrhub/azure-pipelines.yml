@@ -21,6 +21,6 @@ jobs:
     helmto: $(Build.ArtifactStagingDirectory)/deploy/k8s/helm
 - template: ../multiarch.yaml
   parameters:
-    image: ordering.signal.rhub
+    image: ordering.signalrhub
     branch: $(Build.SourceBranchName)
     registryEndpoint: $(registryEndpoint)
