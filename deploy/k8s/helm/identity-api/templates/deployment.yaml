@@ -24,7 +24,7 @@ spec:
       {{ if .Values.inf.mesh.enabled -}}
       annotations:
         linkerd.io/inject: enabled
-      {{- end }}             
+      {{- end }}
     spec:
       {{ if .Values.inf.registry -}}
       imagePullSecrets:
@@ -52,7 +52,7 @@ spec:
             periodSeconds: {{ .Values.probes.readiness.periodSeconds }}
             timeoutSeconds: {{ .Values.probes.readiness.timeoutSeconds }}
           {{- end -}}
-          {{- end }}           
+          {{- end }}
           image: "{{ template "fqdn-image" . }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
@@ -93,4 +93,4 @@ spec:
       tolerations:
 {{ toYaml . | indent 8 }}
     {{- end }}
-
+#test
