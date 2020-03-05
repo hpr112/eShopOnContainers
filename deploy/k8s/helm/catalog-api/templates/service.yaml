@@ -21,4 +21,3 @@ spec:
   selector:
     app: {{ template "catalog-api.name" . }}
     release: {{ .Release.Name }}
-#test
