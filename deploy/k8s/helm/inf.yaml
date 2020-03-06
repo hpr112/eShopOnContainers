@@ -48,8 +48,8 @@ inf:
   misc:                     # inf.misc contains miscellaneous configuration related to infrastructure
     useLoadTest: false      # If running under loading test or not
     useAzureStorage: false  # If catalog api uses azure storage or not
-  registry:                # Uncomment "registry" to specify registry secret
+#  registry:                # Uncomment "registry" to specify registry secret
 #    secretName:            # secretName is the name of the secret inside k8s
-    server:  eshopregistry.azurecr.io              # Registry login server
-    login:   eShopRegistry              # User login
-    pwd:     uUFrkIXhU8kQ29/wupiHqWXc9VJ0sNme              # User pwd
+#    server:                # Registry login server
+#    login:                 # User login
+#    pwd:                   # User pwd
