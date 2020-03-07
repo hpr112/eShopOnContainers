@@ -8,7 +8,7 @@ inf:
     enabled: false          # True to enable TLS (set by deploy-all.ps1)
     issuer: ""              # cert-manager issuer to use for retrieving certs (set by deploy-all.ps1)
   sql:                      # inf.sql defines the sql server databases & logins
-#    host:  my-sql-server   # Uncomment to specify a custom sql-server to be used. By default "sql-data-<appname>" will be used  
+#    host:  my-sql-server   # Uncomment to specify a custom sql-server to be used. By default "sql-data-<appname>" will be used
     common:
       user: sa              # SQL user
       pwd: Pass@word        # SQL pwd
@@ -30,8 +30,8 @@ inf:
     marketing:
       database: MarketingDb
   redis:                    # inf.redis defines the redis' connection strings
-    basket:     
-      svc: basket-data      # Name of k8s svc for basket redis     
+    basket:
+      svc: basket-data      # Name of k8s svc for basket redis
       constr: basket-data   # Connection string to Redis used by Basket API
     keystore:
       svc: keystore-data    # Name of k8s svc for keystore-data redis
@@ -48,9 +48,8 @@ inf:
   misc:                     # inf.misc contains miscellaneous configuration related to infrastructure
     useLoadTest: false      # If running under loading test or not
     useAzureStorage: false  # If catalog api uses azure storage or not
-#  registry:                # Uncomment "registry" to specify registry secret
-#    secretName:            # secretName is the name of the secret inside k8s   
-#    server:                # Registry login server
-#    login:                 # User login
-#    pwd:                   # User pwd
-
+  registry:                # Uncomment "registry" to specify registry secret
+    secretName: eshop-docker-scret           # secretName is the name of the secret inside k8s
+    server: eshopregistry.azurecr.io              # Registry login server
+    login: eShopRegistry                 # User login
+    pwd: uUFrkIXhU8kQ29/wupiHqWXc9VJ0sNme                   # User pwd
