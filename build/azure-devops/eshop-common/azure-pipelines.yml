@@ -7,8 +7,6 @@ trigger:
     - dev
   paths:
     include:
-    - src/BuildingBlocks/*
-    - src/Services/Basket/*
     - deploy/k8s/helm/eshop-common/*
 jobs:
 - template: ../buildimages.yaml
