@@ -1,5 +1,0 @@
-#App-, dns- and image settings
-app.name: eshop
-inf.k8s.dns: eshop.5ae2ebcc2c124104aed4.westeurope.aksapp.io
-ingress.hosts: {eshop.5ae2ebcc2c124104aed4.westeurope.aksapp.io}
-image.pullPolicy: 'Always'
