@@ -10,7 +10,7 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 data:
-  admin:
+ admin:
     access_log_path: "/dev/null"
     address:
       socket_address:
