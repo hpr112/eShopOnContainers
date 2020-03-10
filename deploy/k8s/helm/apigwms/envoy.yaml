@@ -1,1 +1,2 @@
 admin:
+  access_log_path: "/dev/null"
