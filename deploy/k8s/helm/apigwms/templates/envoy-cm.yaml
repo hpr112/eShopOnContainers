@@ -10,5 +10,4 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 data:
-  {{ (.Files.Glob "envoy.yaml").admin.AsConfig | indent 2 | quote }}
-  {{ (.Files.Glob "envoy.yaml").static_resources.AsConfig | indent 2 | quote }}
+  {{ ((.Files.Glob "envoy.yaml").admin).AsConfig | indent 2 | quote }}
